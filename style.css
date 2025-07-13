@@ -1,0 +1,74 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0e6f6;
+  padding: 40px 20px;
+  margin: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#malla-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.semestre {
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+}
+
+.semestre h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #4b2e60;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.ramo {
+  display: inline-block;
+  margin: 6px 8px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 0.95em;
+}
+
+/* Hover effect */
+.ramo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Estados */
+.blocked {
+  background-color: #dddce2;
+  color: #999;
+  cursor: default;
+  opacity: 0.6;
+}
+
+.unlocked {
+  background-color: #d3e7ff;
+  cursor: pointer;
+  color: #113355;
+}
+
+.completed {
+  background-color: #aec9ff;
+  cursor: pointer;
+  text-decoration: line-through;
+  color: #0d2a5a;
+}
